@@ -1,15 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Geist, Geist_Mono, Outfit } from "next/font/google";
 import "./globals.css";
+import Header from "./component/gobalcomponent/header";
+import Footer from "./component/gobalcomponent/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const outfit = Outfit({
+  variable: "--font-outfit-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const dmsans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"], 
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -19,11 +22,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
+      
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${outfit.variable}  ${dmsans.variable} antialiased`}
       >
+        <Header/>
         {children}
+        
       </body>
+      <Footer/>
     </html>
   );
 }

@@ -1,0 +1,192 @@
+import { 
+  BarChart3, 
+  Code2, 
+  Globe, 
+  Megaphone, 
+  Smartphone, 
+  Target, 
+  Search,
+  Zap,
+  Mail,
+  ShoppingCart,
+  Layers,
+  Award,
+  Star,
+  Trophy,
+  ShieldCheck,
+  CheckCircle2
+} from 'lucide-react';
+
+export const APP_NAME = "MindWorks";
+export const LOGO_URL = "https://mindworksme.com/frontend/assets/img/mindwworks_black_logo.webp";
+
+export const NAV_ITEMS = [
+  { label: 'Services', href: '#services' },
+  { label: 'Why Us', href: '#why-choose-us' },
+  { label: 'Process', href: '#process' },
+];
+
+export const HERO_CONTENT = {
+  title: "Engineering Digital Dominance in Dubai",
+  description: "MindWorks is where advanced technology meets psychological conversion design. We build high-performance growth engines for the region's most ambitious brands.",
+  cta: "Claim Your Free Growth Audit"
+};
+
+export const WHO_WE_ARE = {
+  title: "Engineering Digital Dominance in the MENA Region",
+  content: [
+    "MindWorks was founded on the principle that digital marketing should be a science, not a guessing game. We combine advanced software engineering with behavioral psychology to create high-performance growth systems.",
+    "Our team of senior strategists and data scientists works exclusively with ambitious brands that demand measurable, scalable ROI. We don't just deliver clicks; we deliver market dominance.",
+    "Headquartered in Dubai, we possess deep intelligence into regional market nuances, allowing us to navigate the complex digital landscape of the Middle East with precision and speed."
+  ]
+};
+
+export const SERVICES = [
+  {
+    title: "Digital Marketing",
+    description: "360° omnichannel strategies focused on aggressive market share acquisition and brand dominance.",
+    icon: Megaphone
+  },
+  {
+    title: "SEO",
+    description: "Deep-tech search engine optimization. We don't just rank; we dominate intent-based search landscapes.",
+    icon: Search
+  },
+  {
+    title: "Website Development",
+    description: "High-conversion, lightning-fast digital experiences built with modern stacks for superior performance.",
+    icon: Globe
+  },
+  {
+    title: "Social Media Marketing",
+    description: "Turning social interactions into high-intent revenue streams through targeted performance creative.",
+    icon: Zap
+  },
+  {
+    title: "Content Marketing",
+    description: "Data-driven storytelling that builds topical authority and nurtures leads through the entire funnel.",
+    icon: Layers
+  },
+  {
+    title: "Software Development",
+    description: "Custom enterprise-grade software solutions, automation tools, and proprietary growth stacks.",
+    icon: Code2
+  },
+  {
+    title: "Email Marketing",
+    description: "Hyper-personalized lifecycle automation that maximizes customer LTV and retention rates.",
+    icon: Mail
+  },
+  {
+    title: "E-commerce Marketing",
+    description: "Scalable performance marketing for stores, focused on ROAS, CAC optimization, and repeat purchase rate.",
+    icon: ShoppingCart
+  }
+];
+
+export const FEATURES = [
+  {
+    title: "Verified ROI Tracking",
+    description: "100% transparency. We provide real-time dashboards tracking every dirham of your ad spend against revenue.",
+    icon: BarChart3
+  },
+  {
+    title: "Technical Excellence",
+    description: "Our team consists of senior engineers and data scientists, not just account managers.",
+    icon: Target
+  },
+  {
+    title: "Local Market Mastery",
+    description: "Deep understanding of the MENA consumer psychology and regional market nuances in Dubai.",
+    icon: Globe
+  }
+];
+
+export const TRUST_BADGES = [
+  { name: "Google Premier Partner", icon: ShieldCheck },
+  { name: "Meta Business Partner", icon: Award },
+  { name: "Clutch Top Rated 2024", icon: Star },
+  { name: "Forbes Council", icon: Trophy }
+];
+
+export const STATS = [
+  { label: "Revenue Generated", value: "$450M+", suffix: "" },
+  { label: "Ad Spend Managed", value: "$25M+", suffix: "/yr" },
+  { label: "Client Retention", value: "94", suffix: "%" },
+  { label: "Campaigns Scaled", value: "1.2K", suffix: "+" }
+];
+
+export const TESTIMONIALS = [
+  {
+    text: "We couldn't imagine building our scale without MindWorks",
+    author: "Ken",
+    position: "Head of Marketing",
+    company: "EzyDog",
+    imageUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+    tags: ["We", "couldn't", "imagine", "building", "without", "MindWorks"]
+  },
+  {
+    text: "The technical depth of their team delivered serious SEO growth for our platform.",
+    author: "Oliver",
+    position: "Founder",
+    company: "Stellar Digital",
+    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+    tags: ["MindWorks", "delivered", "serious", "SEO", "growth"]
+  },
+  {
+    text: "Best decision we made for our e-commerce expansion in the MENA region.",
+    author: "Lu",
+    position: "Creative Director",
+    company: "Innovate Solutions",
+    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+    tags: ["Best", "decision", "for", "MENA", "expansion"]
+  },
+  {
+    text: "Their software development team built us a tool that saved us thousands in manual labor.",
+    author: "Fatima",
+    position: "Operations Manager",
+    company: "Emirates Group Sub",
+    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop",
+    tags: ["Saved", "thousands", "with", "MindWorks", "software"]
+  }
+];
+
+export const PARTNER_LOGOS = [
+  "https://cdn.worldvectorlogo.com/logos/klaviyo.svg",
+  "https://cdn.worldvectorlogo.com/logos/clutch-co-logo.svg",
+  "https://cdn.worldvectorlogo.com/logos/shopify.svg",
+  "https://cdn.worldvectorlogo.com/logos/bigcommerce-1.svg",
+  "https://cdn.worldvectorlogo.com/logos/magento-2.svg",
+  "https://cdn.worldvectorlogo.com/logos/mailchimp.svg",
+  "https://cdn.worldvectorlogo.com/logos/hubspot.svg",
+  "https://cdn.worldvectorlogo.com/logos/salesforce-2.svg"
+];
+
+export const PROCESS = [
+  { number: "01", title: "Audit", description: "Deep dive into your data silos and competitor gaps." },
+  { number: "02", title: "Strategy", description: "Architecting your unique 90-day growth blueprint." },
+  { number: "03", title: "Execute", description: "Agile implementation with weekly performance sprints." },
+  { number: "04", title: "Scale", description: "Aggressive reinvestment in winning channels." }
+];
+
+export const FAQS = [
+  {
+    question: "What makes MindWorks different from other agencies?",
+    answer: "We are an engineering-first agency. While others focus on 'vanity metrics', we focus on technical performance, data attribution, and bottom-line revenue."
+  },
+  {
+    question: "How long until we see measurable results?",
+    answer: "Performance marketing usually shows positive traction within 14-30 days. Technical SEO typically requires 3-6 months for market dominance."
+  }
+];
+
+export const WHY_CHOOSE_US_CONTENT = {
+  title: "Why High-Growth Brands Choose MindWorks",
+  subtitle: "We replace guesswork with data-science and technical mastery.",
+  points: [
+    "No Junior Account Managers. You work with Senior Strategists only.",
+    "Proprietary AI and Automation stacks for superior efficiency.",
+    "Performance-based pricing models available for select partners.",
+    "24/7 Real-time reporting dashboards via Looker Studio."
+  ]
+};
