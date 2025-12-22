@@ -1,14 +1,17 @@
 import React from 'react'
 import HeroSection from '../component/Home/Herosection'
-import About from '../component/Home/Aboout'
-import Scrollbar from '../component/Home/scrollbar'
+import About from '../component/Home/banner'
+import Scrollbar from '../component/Home/About'
 import Service from '../component/Home/Service'
 import WhyChoose from '../component/Home/Portfolio'
-import OurTeam from '../component/Home/OurTeam'
-import ClientsShowcase from '../component/Home/ClientsShowcase'
-import FAQ from '../component/Home/FAQ'
+import OurTeam from '../component/Home/Blueprint'
+import ClientsShowcase from '../component/Home/Testimonials'
+import FAQ from '../component/Home/Blog'
 import Partners from '../component/Home/Partner'
-import AuditCTA from '../component/Home/AuditCTA'
+
+import ContactSection from '../component/Home/whychoose'
+import BlogSection from '../component/Home/Blog'
+import Banner from '../component/Home/banner'
 
 
 
@@ -17,7 +20,7 @@ const Home
   return (
     <div>
       <HeroSection/>
-      <About/>
+      <Banner/>
       <Scrollbar/>
       <Service/>
       
@@ -25,8 +28,8 @@ const Home
       <OurTeam/>
       <ClientsShowcase/>
       <Partners/>
-      <AuditCTA/>
-      {/* <FAQ/> */}
+      <ContactSection/>
+      <BlogSection/>
     </div>
   )
 }

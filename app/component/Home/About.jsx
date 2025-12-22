@@ -1,40 +1,3 @@
-// "use client";
-
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay } from "swiper/modules";
-// import "swiper/css";
-
-// const Scrollbar = () => {
-//   return (
-//     <div className="bg-gray-900 w-full py-6">
-//       <Swiper
-//         modules={[Autoplay]}   
-//         slidesPerView="auto"
-//         spaceBetween={64}
-//         loop={true}
-//         speed={15000}          
-//         allowTouchMove={false}
-//         autoplay={{
-//           delay: 0,
-//           disableOnInteraction: false,
-//         }}
-//         className="w-full"
-//       >
-//         {Array.from({ length: 12 }).map((_, idx) => (
-//           <SwiperSlide key={idx} className="!w-auto">
-//             <span className="text-white text-[35px] font-semibold inline-flex items-center gap-2">
-//               We Promise <i className="fa fa-arrow-down-right"></i> We Deliver{" "}
-             
-//             </span>
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-//     </div>
-//   );
-// };
-
-// export default Scrollbar;
 
 "use client";
 
@@ -45,7 +8,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <section id="about" className="py-32 bg-[#0A0A0A]">
-      <div className="container mx-auto px-6">
+      <div className="wrapper ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           <motion.div
@@ -57,13 +20,13 @@ const About = () => {
             <div className="relative ">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#0A0A0A]/10 rounded-tl-3xl -z-10"></div>
               <img 
-                src="https://images.unsplash.com/photo-1600880212319-7834e53f35fe?q=80&w=800&auto=format&fit=crop" 
+                src="/about.png" 
                 alt="Digital Marketing Team" 
                 className="rounded-2xl shadow-2xl w-full object-cover aspect-square border border-white/5"
               />
-              <div className="absolute -bottom-6 -right-6 bg-[#1F1F1F] p-6 rounded-xl shadow-xl max-w-xs border-l-4 border-[#0A0A0A]">
+              <div className="dmsans absolute -bottom-6 -right-6 bg-[#1F1F1F] p-6 rounded-xl shadow-xl max-w-xs border-l-4 border-[#0A0A0A]">
                 <p className="text-4xl font-black text-white mb-1">98%</p>
-                <p className="text-slate-400 font-bold uppercase tracking-widest text-[10px]">
+                <p className=" font-bold uppercase tracking-widest text-[10px] text-[#faac52]">
                   Client Satisfaction Rate in Dubai
                 </p>
               </div>
@@ -76,19 +39,19 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-xs font-black text-[#00A74E] uppercase tracking-[0.3em] mb-4">
+            <h2 className="text-xs font-black text-[#faac52] uppercase tracking-[0.3em] mb-4 dmsans">
               The MindWorks DNA
             </h2>
-            <h3 className="text-4xl md:text-5xl font-heading font-black text-white mb-8 leading-tight tracking-tighter">
+            <h3 className="text-3xl md:text-4xl font-heading font-black text-white mb-8 leading-tight tracking-tighter outfit">
               {WHO_WE_ARE.title}
             </h3>
-            <div className="space-y-6 text-slate-400 leading-relaxed text-lg font-medium">
+            <div className="space-y-6 text-slate-400 leading-relaxed text-lg font-medium dmsans">
               {WHO_WE_ARE.content.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
             
-            <div className="mt-12 pt-10 border-t border-white/5 grid grid-cols-3 gap-8">
+            <div className="mt-12 pt-10 border-t border-white/5 grid grid-cols-3 gap-8 dmsans">
               <div>
                 <h4 className="text-3xl font-black text-white">500+</h4>
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">Growth Projects</p>

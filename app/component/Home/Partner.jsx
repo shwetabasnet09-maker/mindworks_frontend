@@ -7,7 +7,7 @@ const Partners = () => {
   return (
     <section className="py-24 bg-[#1F1F1F] relative overflow-hidden border-y border-white/5">
       <div className="container mx-auto px-6 mb-12">
-        <h4 className="text-center text-[10px] font-black uppercase tracking-[0.4em] text-slate-500">
+        <h4 className="text-center text-[10px] font-black uppercase tracking-[0.4em] text-[#faac52] dmsans text-sm md:text-base">
           Our Partners & Certifications
         </h4>
       </div>

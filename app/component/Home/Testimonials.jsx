@@ -16,19 +16,19 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-[#00A74E] font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+            <span className="text-[#faac52] dmsans text-sm md:text-base font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
               Proven Performance
             </span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white mb-6 tracking-tighter">
-              The Clients Who Trusted <br /> <span className="text-gradient-green">Our Process</span>
+            <h2 className="text-3xl md:text-6xl font-heading font-black text-white mb-6 tracking-tighter outfit">
+              The Clients Who Trusted <br /> <span className="text-[#faac52]">Our Process</span>
             </h2>
-            <p className="text-xl text-slate-400 font-medium leading-relaxed">
+            <p className="text-xl text-slate-400 font-medium leading-relaxed dmsans">
               Real partnerships are built on results, not promises. Here’s what our clients say after trusting MindWorks to deliver serious growth.
             </p>
           </motion.div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 dmsans">
           {TESTIMONIALS.map((t, index) => (
             <motion.div 
               key={index}
@@ -92,7 +92,7 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-20 text-center">
-           <button className="px-10 py-4 glass border-[#00A74E]/20 text-[#00A74E] font-black uppercase tracking-widest text-sm rounded-2xl hover:bg-[#00A74E] hover:text-white transition-all shadow-2xl">
+           <button className="px-10 py-4 glass border-[#00A74E]/20 text-[#faac52] font-black uppercase tracking-widest text-sm rounded-2xl hover:bg-[#00A74E] hover:text-white transition-all shadow-2xl">
               View All 20+ Testimonials
            </button>
         </div>

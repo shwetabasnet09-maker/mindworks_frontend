@@ -7,7 +7,7 @@ import { CheckCircle2, ShieldCheck } from 'lucide-react';
 const Features = () => {
   return (
     <section id="why-choose-us" className="py-32 relative overflow-hidden bg-[#1F1F1F]">
-      <div className="container mx-auto px-6">
+      <div className="wrapper mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
             <motion.div
@@ -15,13 +15,13 @@ const Features = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-[#00A74E] font-black uppercase tracking-[0.3em] text-[10px] block mb-4">
+              <span className="text-[#faac52] font-black uppercase tracking-[0.3em] text-[10px] block mb-4 dmsans">
                 Competitive Edge
               </span>
-              <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-8 leading-tight tracking-tighter">
+              <h2 className="text-3xl md:text-4xl font-heading font-black text-white mb-8 leading-tight tracking-tighter outfit">
                 {WHY_CHOOSE_US_CONTENT.title}
               </h2>
-              <p className="text-xl text-slate-400 mb-12 leading-relaxed font-medium">
+              <p className="text-xl text-slate-400 mb-12 leading-relaxed font-medium dmsans">
                 {WHY_CHOOSE_US_CONTENT.subtitle}
               </p>
 
@@ -41,7 +41,7 @@ const Features = () => {
                   <ShieldCheck size={40} className="text-[#00A74E]" />
                 </div>
                 <div>
-                  <p className="text-white font-black text-xl">Privacy & IP Secured</p>
+                  <p className="text-white font-black text-xl dmsans">Privacy & IP Secured</p>
                   <p className="text-slate-400 text-sm font-medium">
                     All strategies are proprietary and strictly confidential.
                   </p>
@@ -66,7 +66,7 @@ const Features = () => {
                   <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-[#00A74E] group-hover:bg-[#00A74E] group-hover:text-white transition-all duration-500">
                     <feature.icon size={32} />
                   </div>
-                  <div>
+                  <div className='dmsans'>
                     <h3 className="text-2xl font-heading font-black text-white mb-3">{feature.title}</h3>
                     <p className="text-slate-400 text-lg leading-relaxed font-medium">{feature.description}</p>
                   </div>

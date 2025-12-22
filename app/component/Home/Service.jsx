@@ -7,17 +7,17 @@ import { ArrowUpRight } from 'lucide-react';
 const Services = () => {
   return (
     <section id="services" className="py-32 relative bg-[#0A0A0A] overflow-hidden">
-      <div className="container mx-auto px-6">
+      <div className="wrapper ">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
-            <span className="text-[#00A74E] font-black uppercase tracking-[0.3em] text-[10px] block mb-4">
+            <span className="text-[#faac52] font-black uppercase tracking-[0.3em] text-[10px] block mb-4 outfit">
               Domain Expertise
             </span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white leading-[1] tracking-tighter">
+            <h2 className="text-3xl md:text-7xl font-semibold font-black text-white leading-[1] tracking-tighter outfit">
               Integrated Growth <br /> <span className="text-gradient-green">Solutions.</span>
             </h2>
           </div>
-          <p className="text-slate-400 text-xl font-medium max-w-sm">
+          <p className="text-slate-400 text-xl font-medium max-w-sm dmsans">
             Scalable digital strategies engineered for the MENA region's top-tier brands.
           </p>
         </div>
@@ -32,7 +32,7 @@ const Services = () => {
               transition={{ delay: index * 0.05 }}
               className="group relative"
             >
-              <div className="glass p-8 rounded-[40px] h-full flex flex-col hover:bg-white/[0.04] transition-all duration-500 border-white/5 hover:border-[#00A74E]/30">
+              <div className="glass p-8 rounded-[40px] h-full flex flex-col hover:bg-white/[0.04] transition-all duration-500 border-white/5 hover:border-[#00A74E]/30 border border-white/10 border-2">
                 <div className="w-16 h-16 bg-[#00A74E]/10 text-[#00A74E] rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-all duration-500">
                   <service.icon size={28} />
                 </div>
