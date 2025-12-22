@@ -7,8 +7,8 @@ import { ArrowUpRight } from 'lucide-react';
 const Services = () => {
   return (
     <section id="services" className="py-32 relative bg-[#0A0A0A] overflow-hidden">
-      <div className="wrapper ">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+      <div className="wrapper px-6 ">
+        <div className="flex flex-col md:flex-row justify-between md:items-end mb-24 gap-8">
           <div className="max-w-2xl">
             <span className="text-[#faac52] font-black uppercase tracking-[0.3em] text-[10px] block mb-4 outfit">
               Domain Expertise

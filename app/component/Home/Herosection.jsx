@@ -55,7 +55,7 @@ const Hero = () => {
           >
             <a 
               href="#audit" 
-              className=" px-10 py-4 bg-[#faac52] text-white font-black text-xl rounded-2xl shadow-[0_20px_40px_rgba(0,132,79,0.3)] hover:scale-105 transition-transform flex items-center justify-center dmsans"
+              className=" md:px-10 md:py-4 py-2 px-4 bg-[#faac52] text-white font-black text-xl rounded-2xl shadow-[0_20px_40px_rgba(0,132,79,0.3)] hover:scale-105 transition-transform flex items-center justify-center dmsans"
             >
               {HERO_CONTENT.cta}
               <ArrowRight className="ml-3 w-6 h-6" />

@@ -83,7 +83,7 @@ export default function BlogSection() {
 
   return (
     <div className="bg-gray-50 py-40 ">
-      <div className="wrapper">
+      <div className="wrapper px-6">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">

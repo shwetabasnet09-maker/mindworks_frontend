@@ -11,7 +11,7 @@ const ContactSection = () => {
          <div className="absolute top-0 left-0 w-full h-full bg-[#0a0a2a] rotate-[15deg] scale-150 origin-top-left"></div>
       </div>
 
-      <div className="relative z-10 wrapper grid grid-cols-1 lg:grid-cols-[60%_40%] gap-2 items-start">
+      <div className="relative z-10 wrapper grid grid-cols-1 lg:grid-cols-[60%_40%] gap-2 items-start px-6">
         
         {/* LEFT CONTENT */}
         <div className="text-white pt-12">

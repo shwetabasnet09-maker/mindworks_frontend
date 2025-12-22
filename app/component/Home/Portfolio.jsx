@@ -7,7 +7,7 @@ import { CheckCircle2, ShieldCheck } from 'lucide-react';
 const Features = () => {
   return (
     <section id="why-choose-us" className="py-32 relative overflow-hidden bg-[#1F1F1F]">
-      <div className="wrapper mx-auto px-6">
+      <div className="wrapper  px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
             <motion.div
@@ -63,7 +63,7 @@ const Features = () => {
                 className="glass p-10 rounded-[40px] group hover:border-[#00A74E]/50 transition-all duration-500"
               >
                 <div className="flex items-start space-x-6">
-                  <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-[#00A74E] group-hover:bg-[#00A74E] group-hover:text-white transition-all duration-500">
+                  <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center text-[#00A74E] group-hover:bg-[#00A74E] group-hover:text-white transition-all duration-500">
                     <feature.icon size={32} />
                   </div>
                   <div className='dmsans'>

@@ -8,8 +8,8 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <section id="about" className="py-32 bg-[#0A0A0A]">
-      <div className="wrapper ">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="wrapper px-6 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:items-center">
 
           <motion.div
             initial={{ opacity: 0, x: -50 }}
