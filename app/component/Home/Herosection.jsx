@@ -35,7 +35,7 @@ const Hero = () => {
             className=" text-4xl md:text-8xl font-heading font-extrabold text-white mb-8 leading-[1] tracking-tighter outfit"
           >
             Scale Your Brand <br />
-            <span className="text-[#faac52]">With Precision.</span>
+            <span className="text-[#00A74E]">With Precision.</span>
           </motion.h1>
 
           <motion.p
@@ -55,7 +55,7 @@ const Hero = () => {
           >
             <a 
               href="#audit" 
-              className=" md:px-10 md:py-4 py-2 px-4 bg-[#faac52] text-white font-black text-xl rounded-2xl shadow-[0_20px_40px_rgba(0,132,79,0.3)] hover:scale-105 transition-transform flex items-center justify-center dmsans"
+              className=" md:px-10 md:py-4 py-2 px-4 bg-[#00A74E] text-white font-black text-xl rounded-2xl shadow-[0_20px_40px_rgba(0,132,79,0.3)] hover:scale-105 transition-transform flex items-center justify-center dmsans"
             >
               {HERO_CONTENT.cta}
               <ArrowRight className="ml-3 w-6 h-6" />
@@ -67,7 +67,7 @@ const Hero = () => {
                <div className="pl-6 text-left">
                   <p className="text-white font-semibold text-sm">Join 500+ Local Brands</p>
                   <div className="flex items-center space-x-1">
-                     {[1,2,3,4,5].map(s => <div key={s} className="w-3 h-3 bg-[#faac52] rounded-full"></div>)}
+                     {[1,2,3,4,5].map(s => <div key={s} className="w-3 h-3 bg-[#00A74E] rounded-full"></div>)}
                      <span className="text-slate-500 text-[10px] font-black uppercase ml-2 dmsans">5.0 Agency Rating</span>
                   </div>
                </div>

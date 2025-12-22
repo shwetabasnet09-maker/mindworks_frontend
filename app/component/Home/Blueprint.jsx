@@ -10,8 +10,8 @@ const Process = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-24">
-          <span className="text-[#faac52] font-black uppercase tracking-widest text-xs mb-4 block">Our Methodology</span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight outfit">Our Blueprint for <span className="text-[#faac52]">Success</span></h2>
+          <span className="text-[#00A74E] font-black uppercase tracking-widest text-xs mb-4 block">Our Methodology</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight outfit">Our Blueprint for <span className="text-[#00A74E]">Success</span></h2>
           <p className="text-gray-400 text-lg font-medium dmsans">A standardized engineering methodology that produces non-standard results.</p>
         </div>
 

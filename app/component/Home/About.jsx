@@ -26,7 +26,7 @@ const About = () => {
               />
               <div className="dmsans absolute -bottom-6 -right-6 bg-[#1F1F1F] p-6 rounded-xl shadow-xl max-w-xs border-l-4 border-[#0A0A0A]">
                 <p className="text-4xl font-black text-white mb-1">98%</p>
-                <p className=" font-bold uppercase tracking-widest text-[10px] text-[#faac52]">
+                <p className=" font-bold uppercase tracking-widest text-[10px] text-[#00A74E]">
                   Client Satisfaction Rate in Dubai
                 </p>
               </div>
@@ -39,7 +39,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-xs font-black text-[#faac52] uppercase tracking-[0.3em] mb-4 dmsans">
+            <h2 className="text-xs font-black text-[#00A74E] uppercase tracking-[0.3em] mb-4 dmsans">
               The MindWorks DNA
             </h2>
             <h3 className="text-3xl md:text-4xl font-heading font-black text-white mb-8 leading-tight tracking-tighter outfit">

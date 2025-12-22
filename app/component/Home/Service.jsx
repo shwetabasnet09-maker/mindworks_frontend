@@ -10,7 +10,7 @@ const Services = () => {
       <div className="wrapper px-6 ">
         <div className="flex flex-col md:flex-row justify-between md:items-end mb-24 gap-8">
           <div className="max-w-2xl">
-            <span className="text-[#faac52] font-black uppercase tracking-[0.3em] text-[10px] block mb-4 outfit">
+            <span className="text-[#00A74E] font-black uppercase tracking-[0.3em] text-[10px] block mb-4 outfit">
               Domain Expertise
             </span>
             <h2 className="text-3xl md:text-7xl font-semibold font-black text-white leading-[1] tracking-tighter outfit">

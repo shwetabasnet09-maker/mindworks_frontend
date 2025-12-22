@@ -17,7 +17,7 @@ const ContactSection = () => {
         <div className="text-white pt-12">
           <div className="flex items-center gap-3 mb-4">
             <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-gray-300 dmsans">Why Choose Us</span>
-            <div className="h-[2px] w-8 bg-[#faac52]"></div>
+            <div className="h-[2px] w-8 bg-[#00A74E]"></div>
           </div>
           
           <h1 className="text-3xl md:text-5xl font-extrabold leading-[1.15] mb-12 outfit">
@@ -28,7 +28,7 @@ const ContactSection = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-16 mb-20 lg:mb-0 dmsans">
             <div className="flex items-center gap-4">
-              <div className="bg-[#faac52] p-4 rounded-full text-black">
+              <div className="bg-[#00A74E] p-4 rounded-full text-black">
                 <Phone size={24} fill="currentColor" />
               </div>
               <div className="text-sm font-medium text-gray-400">

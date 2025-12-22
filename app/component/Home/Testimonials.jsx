@@ -16,11 +16,11 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-[#faac52] dmsans text-sm md:text-base font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+            <span className="text-[#00A74E] dmsans text-sm md:text-base font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
               Proven Performance
             </span>
             <h2 className="text-3xl md:text-6xl font-heading font-black text-white mb-6 tracking-tighter outfit">
-              The Clients Who Trusted <br /> <span className="text-[#faac52]">Our Process</span>
+              The Clients Who Trusted <br /> <span className="text-[#00A74E]">Our Process</span>
             </h2>
             <p className="text-xl text-slate-400 font-medium leading-relaxed dmsans">
               Real partnerships are built on results, not promises. Here’s what our clients say after trusting MindWorks to deliver serious growth.
@@ -92,7 +92,7 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-20 text-center">
-           <button className="px-10 py-4 glass border-[#00A74E]/20 text-[#faac52] font-black uppercase tracking-widest text-sm rounded-2xl hover:bg-[#00A74E] hover:text-white transition-all shadow-2xl">
+           <button className="px-10 py-4 glass border-[#00A74E]/20 text-[#00A74E] font-black uppercase tracking-widest text-sm rounded-2xl hover:bg-[#00A74E] hover:text-white transition-all shadow-2xl">
               View All 20+ Testimonials
            </button>
         </div>

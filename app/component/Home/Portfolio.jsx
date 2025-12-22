@@ -15,7 +15,7 @@ const Features = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-[#faac52] font-black uppercase tracking-[0.3em] text-[10px] block mb-4 dmsans">
+              <span className="text-[#00A74E] font-black uppercase tracking-[0.3em] text-[10px] block mb-4 dmsans">
                 Competitive Edge
               </span>
               <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-8 leading-tight tracking-tighter outfit">
