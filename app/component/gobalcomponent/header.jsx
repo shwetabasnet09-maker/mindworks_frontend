@@ -150,7 +150,7 @@ const Header = () => {
       ],
     },
     {
-      name: "Services",
+      name: "Services", href: "/services",
       children: [
         { name: "Web Development", href: "/services/web" },
         { name: "App Development", href: "/services/app" },
