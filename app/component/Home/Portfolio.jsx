@@ -7,7 +7,7 @@ import { CheckCircle2, ShieldCheck } from 'lucide-react';
 const Features = () => {
   return (
     <section id="why-choose-us" className="py-32 relative overflow-hidden bg-[#1F1F1F]">
-      <div className="container mx-auto px-6">
+      <div className="wrapper mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
             <motion.div
