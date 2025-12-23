@@ -26,7 +26,7 @@ export default function ContactPage() {
 
   return (
     <div className=" bg-black text-white">
-        <Bannermain backgroundImg="/banner_img.jpeg" title="Blog" />
+        <Bannermain backgroundImg="/banner_img.jpeg" title="Contact-Us" />
       <div className="wrapper mx-auto px-4 py-16">
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
