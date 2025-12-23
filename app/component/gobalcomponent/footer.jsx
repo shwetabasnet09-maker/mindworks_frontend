@@ -1,148 +1,11 @@
-// import React from 'react';
-// import { FaLinkedinIn, FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa';
-// import { FaXTwitter } from 'react-icons/fa6';
-// import Image from 'next/image';
-
-// const Footer = () => {
-//   const services = [
-//     'Business Setup & Licensing',
-//     'Professional Licensing',
-//     'Corporate Services',
-//     'Visa & PRO Services',
-//     'Banking Assistance',
-//     'Mainland Company Formation',
-//     'Free Zone Company Setup',
-//     'Offshore Company Registration'
-//   ];
-
-//   const industries = [
-//     'Real Estate',
-//     'Tourism',
-//     'Healthcare',
-//     'E-commerce',
-//     'Construction',
-//     'Hotel',
-//     'Logistics',
-//     'Software'
-//   ];
-
-//   const about = [
-//     'Home',
-//     'About Us',
-//     'Blog',
-//     'Services',
-//     'Contact Us',
-//     'Privacy Policy',
-//     'Cookie Policy',
-//     'Terms & Conditions'
-//   ];
-
-//   return (
-//     <footer className="bg-gray-900 text-white py-12 px-6">
-//       <div className="max-w-7xl mx-auto">
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-//           {/* Location Section */}
-//           <div>
-//             <div className="flex items-center gap-2 mb-6">
-//               <Image 
-//                 src="/logo_mindworks.webp" 
-//                 alt="Retyn Logo" 
-//                 width={120} 
-//                 height={40}
-//                 className="object-contain"
-//               />
-//             </div>
-            
-//             <h3 className="text-lg font-semibold mb-4">Location</h3>
-//             <p className="text-gray-300 text-sm leading-relaxed mb-4">
-//               422-7, The Offices 3, One Central, World Trade Center,<br />
-//               Sheikh Zayed Road, PO Box 9573, Dubai, UAE
-//             </p>
-            
-//             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-//             <p className="text-gray-300 text-sm mb-1">+971 506392848</p>
-//             <p className="text-gray-300 text-sm">contact@retyn.ai</p>
-//           </div>
-
-//           {/* Services Section */}
-//           <div>
-//             <h3 className="text-lg font-semibold mb-4">Services</h3>
-//             <ul className="space-y-2">
-//               {services.map((service, index) => (
-//                 <li key={index}>
-//                   <a href="#" className="text-gray-300 text-sm hover:text-white transition-colors">
-//                     {service}
-//                   </a>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-
-//           {/* Industries Section */}
-//           <div>
-//             <h3 className="text-lg font-semibold mb-4">Industries</h3>
-//             <ul className="space-y-2">
-//               {industries.map((industry, index) => (
-//                 <li key={index}>
-//                   <a href="#" className="text-gray-300 text-sm hover:text-white transition-colors">
-//                     {industry}
-//                   </a>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-
-//           {/* About Retyn Section */}
-//           <div>
-//             <h3 className="text-lg font-semibold mb-4">About Retyn</h3>
-//             <ul className="space-y-2">
-//               {about.map((item, index) => (
-//                 <li key={index}>
-//                   <a href="#" className="text-gray-300 text-sm hover:text-white transition-colors">
-//                     {item}
-//                   </a>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-//         </div>
-
-//         {/* Social Icons and Copyright */}
-//         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-//           <div className="flex gap-3">
-//             <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-//               <FaXTwitter className="w-5 h-5 text-gray-900" />
-//             </a>
-//             <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-//               <FaLinkedinIn className="w-5 h-5 text-gray-900" />
-//             </a>
-//             <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-//               <FaFacebookF className="w-5 h-5 text-gray-900" />
-//             </a>
-//             <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-//               <FaYoutube className="w-5 h-5 text-gray-900" />
-//             </a>
-//             <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-//               <FaInstagram className="w-5 h-5 text-gray-900" />
-//             </a>
-//           </div>
-          
-//           <p className="text-gray-400 text-sm">
-//             © Retyn 2025. All rights reserved.
-//           </p>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
 
 
-"use client"; // <-- Add this at the very top
+
+"use client"; 
 
 import React from 'react';
 import { MapPin, Mail, Phone, Send, ArrowUp } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -153,7 +16,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white dmsans">
       {/* CTA Banner */}
       <div className="wrapper px-4 sm:px-6 lg:px-8 py-8">
-        <div className="bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-3xl p-8 flex items-center justify-between flex-wrap gap-6">
+        <div className="bg-gradient-to-r from-[#00A74E] to-yellow-300 rounded-3xl p-8 flex items-center justify-between flex-wrap gap-6">
           <div className="flex items-center gap-6">
             <img 
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" 
@@ -191,8 +54,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-yellow-400 rounded"></div>
-              <span className="text-2xl font-bold">DigiPlus</span>
+              <Image src="/logo_mindworks.webp" alt="MindWorks Logo" width={120} height={40} className="object-contain" />
             </div>
             <p className="text-gray-400 mb-8">
               At vero eos et accusamus iusto odio dignissimos ducimus blanditiis
@@ -203,7 +65,7 @@ export default function Footer() {
                 placeholder="Email address" 
                 className="flex-1 px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               />
-              <button className="bg-yellow-400 p-3 rounded-lg hover:bg-yellow-500 transition-colors">
+              <button className="bg-[#00A74E] p-3 rounded-lg hover:bg-yellow-500 transition-colors">
                 <Send className="w-5 h-5 text-gray-900" />
               </button>
             </div>
@@ -236,17 +98,17 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-6">Contact</h3>
             <ul className="space-y-6">
               <li className="flex items-start gap-3">
-                <MapPin className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />
+                <MapPin className="w-6 h-6 text-[#00A74E] flex-shrink-0 mt-1" />
                 <span className="text-gray-400">55 Main Street, 2nd block<br />Melbourne, Australia</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                <Mail className="w-6 h-6 text-[#00A74E] flex-shrink-0" />
                 <a href="mailto:Support@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                   Support@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                <Phone className="w-6 h-6 text-[#00A74E] flex-shrink-0" />
                 <a href="tel:+00012344555" className="text-gray-400 hover:text-white transition-colors">
                   +000 (123) 44 55
                 </a>
@@ -267,7 +129,7 @@ export default function Footer() {
     <div className="bg-black p-1 rounded-xl">
       <button
         onClick={scrollToTop}
-        className="bg-yellow-400 p-4 rounded-xl hover:bg-yellow-500 transition-colors shadow-lg"
+        className="bg-[#00A74E] p-4 rounded-xl hover:bg-yellow-500 transition-colors shadow-lg"
       >
         <ArrowUp className="w-6 h-6 text-gray-900" />
       </button>

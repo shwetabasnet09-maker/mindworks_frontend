@@ -38,7 +38,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="bg-[#fbb034] p-4 rounded-full text-black">
+              <div className="bg-[#00A74E] p-4 rounded-full text-black">
                 <MapPin size={24} fill="currentColor" />
               </div>
               <div className="text-sm font-medium text-gray-400">
@@ -104,7 +104,7 @@ const ContactSection = () => {
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="bg-[#fbb034] hover:bg-orange-500 text-white font-bold py-4 px-12 text-[11px] tracking-[0.15em] uppercase transition-all"
+                  className="bg-[#00A74E] hover:bg-orange-500 text-white font-bold py-4 px-12 text-[11px] tracking-[0.15em] uppercase transition-all"
                 >
                   Send a Message
                 </button>

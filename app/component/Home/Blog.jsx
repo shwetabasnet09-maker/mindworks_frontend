@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, MessageCircle, User, FolderOpen } from 'lucide-react';
 
 const BlogCard = ({ date, month, author, category, title, image, commentCount }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col">
+  <div className="bg-white rounded-2xl shadow-md hov400er:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col">
     {/* Image */}
     <div className="relative h-48 md:h-40">
       <img 
@@ -10,7 +10,7 @@ const BlogCard = ({ date, month, author, category, title, image, commentCount })
         alt={title}
         className="w-full h-full object-cover"
       />
-      <div className="absolute top-4 right-4 bg-yellow-400 text-black font-bold px-3 py-2 rounded-lg text-center">
+      <div className="absolute top-4 right-4 bg-[#00A74E] text-black font-bold px-3 py-2 rounded-lg text-center">
         <div className="text-lg">{date}</div>
         <div className="text-xs uppercase">{month}</div>
       </div>
@@ -21,11 +21,11 @@ const BlogCard = ({ date, month, author, category, title, image, commentCount })
       {/* Author & Category */}
       <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
         <div className="flex items-center gap-1">
-          <User className="w-4 h-4 text-yellow-400" />
+          <User className="w-4 h-4 text-[#00A74E]" />
           <span>By {author}</span>
         </div>
         <div className="flex items-center gap-1">
-          <FolderOpen className="w-4 h-4 text-yellow-400" />
+          <FolderOpen className="w-4 h-4 text-[#00A74E]" />
           <span>{category}</span>
         </div>
       </div>
@@ -37,12 +37,12 @@ const BlogCard = ({ date, month, author, category, title, image, commentCount })
 
       {/* Footer */}
       <div className="flex items-center justify-between text-sm">
-        <button className="flex items-center gap-1 text-gray-700 font-medium uppercase hover:text-yellow-400 transition-colors">
+        <button className="flex items-center gap-1 text-gray-700 font-medium uppercase hover:[#00A74E] transition-colors">
           Read More
           <ArrowRight className="w-4 h-4" />
         </button>
         <div className="flex items-center gap-1 text-gray-500">
-          <MessageCircle className="w-4 h-4 text-yellow-400" />
+          <MessageCircle className="w-4 h-4 text-[#00A74E]" />
           <span>{commentCount}</span>
         </div>
       </div>
@@ -87,10 +87,10 @@ export default function BlogSection() {
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-yellow-400 font-semibold uppercase tracking-wider text-sm dmsans">
+            <span className="text-[#00A74E] font-semibold uppercase tracking-wider text-sm dmsans">
               From The Blog
             </span>
-            <div className="w-12 h-0.5 bg-yellow-400"></div>
+            <div className="w-12 h-0.5 bg-[#00A74E]"></div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 outfit">
             News & Articles
