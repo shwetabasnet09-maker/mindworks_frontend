@@ -9,7 +9,7 @@ import ProjectSection from '../component/Service/Project'
 const page = () => {
   return (
     <div>
-    <Bannermain backgroundImg="/AboutUs-Mountain@2x.webp" title="Services" />
+    <Bannermain backgroundImg="/banner_img.jpeg" title="Services" />
       <Services/>
       <Features/>
      <ProjectSection/>

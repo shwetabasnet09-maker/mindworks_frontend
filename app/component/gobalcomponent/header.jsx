@@ -149,14 +149,16 @@ const Header = () => {
         { name: "FAQ", href: "/faq" },
       ],
     },
-    {
-      name: "Services", href: "/services",
-      children: [
-        { name: "Web Development", href: "/services/web" },
-        { name: "App Development", href: "/services/app" },
-        { name: "SEO", href: "/services/seo" },
-      ],
-    },
+     {
+  name: "Services",
+  href: "/services",
+  // children: [
+  //   { name: "Web Development", href: "/services/web" },
+  //   { name: "App Development", href: "/services/app" },
+  //   { name: "SEO", href: "/services/seo" },
+  // ],
+},
+
     { name: "Projects", href: "/projects" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },

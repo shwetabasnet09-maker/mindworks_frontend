@@ -1,3 +1,6 @@
+
+
+
 "use client";
 
 import { usePathname } from "next/navigation";
@@ -9,18 +12,20 @@ const Bannermain = ({ title, subTitle, backgroundImg }) => {
 
   return (
     <section
-      className="relative w-full h-[450px] md:h-[500px] lg:h-[550px] bg-cover bg-black/70 bg-center"
+      className="relative w-full h-[450px] md:h-[500px] lg:h-[550px] bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImg})` }}
     >
-      <div className="w-full h-full absolute bg-black opacity-50"></div>
+      {/* Strong Dark Overlay */}
+      <div className="absolute inset-0 bg-black/85"></div>
+
       {/* Content */}
-      <div className="relative flex justify-center items-center h-full text-center px-4">
+      <div className="relative z-10 flex justify-center items-center h-full text-center px-4">
         <div className="rounded-lg w-full max-w-6xl mt-20">
           <h1 className="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[60px] font-primary font-regular text-white leading-tight mb-4">
             {title}
           </h1>
 
-          <ol className="flex flex-wrap justify-center text-base sm:text-lg   ">
+          <ol className="flex flex-wrap justify-center text-base sm:text-lg">
             <li>
               <Link
                 className="text-white text-[15px] sm:text-[16.5px] md:text-[17.5px] opensans font-medium"
@@ -29,6 +34,7 @@ const Bannermain = ({ title, subTitle, backgroundImg }) => {
                 Home
               </Link>
             </li>
+
             {pathnames.map((value, index) => {
               const formattedTitle = decodeURIComponent(value).replace(
                 /[/\-]/g,
@@ -42,6 +48,7 @@ const Bannermain = ({ title, subTitle, backgroundImg }) => {
                   <span className="text-white mx-3 sm:mx-4 text-[15px] sm:text-[17px]">
                     /
                   </span>
+
                   {last ? (
                     <span className="text-white capitalize text-[15px] sm:text-[16.5px] md:text-[17.5px] opensans font-medium">
                       {formattedTitle}
