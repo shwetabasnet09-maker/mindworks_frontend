@@ -51,10 +51,10 @@ export default function MeetOurTeam() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 py-16 px-8">
+    <div className="min-h-screen bg-gray-900 py-16 px-8 dmsans">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-white mb-4">Meet our team</h1>
+          <h1 className="text-5xl font-bold text-white mb-4 outfit">Meet our team</h1>
           <p className="text-gray-400 text-lg">
             Alone we can do so little, together we can<br />do so much.
           </p>

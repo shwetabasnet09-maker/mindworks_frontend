@@ -93,7 +93,7 @@ export default function ProjectSection() {
             <div className="w-12 h-0.5 bg-[#00A74E]"></div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white outfit">
-            News & Articles
+            New Project Updates
           </h2>
         </div>
 
