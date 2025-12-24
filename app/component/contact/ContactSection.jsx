@@ -33,7 +33,7 @@ const Contact = () => {
               key={index}
               className="bg-[#F2F2F2] rounded-[10px] p-6 flex flex-col items-center text-center"
             >
-              <div className="bg-[#255833] rounded-full p-4 w-24 h-24 flex items-center justify-center mb-4">
+              <div className="bg-[#255833] rounded-full p-4 w-15 h-15 flex items-center justify-center mb-4">
                 <IconComponent className="w-10 h-10 text-white" />
               </div>
 
