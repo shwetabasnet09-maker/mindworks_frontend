@@ -46,52 +46,111 @@ export const SERVICES = [
     title: "Digital Marketing",
         slug: "digital-marketing",
 
-    description: "360° omnichannel strategies focused on aggressive market share acquisition and brand dominance.",
-    icon: Megaphone
+    description: "360° omnichannel strategies focused on aggressive market share acquisition and brand dominance. The difference is in the details. The digital marketing services we provide are rooted in data science and technical excellence. We don't do 'spray and pray' ad campaigns; we engineer growth engines that scale predictably.  ",
+    icon: Megaphone,
+    features: [
+      "Custom storefront design & development",
+      "Payment gateway integration",
+      "Inventory & order management systems",
+      "Conversion rate optimization",
+    ],
+    img:"/about.png"
   },
   {
     title: "SEO",
     slug: "search-engine-optimization",
     description: "Deep-tech search engine optimization. We don't just rank; we dominate intent-based search landscapes.",
-    icon: Search
+    icon: Search,
+    features: [
+      "Automated email campaign workflows",
+      "List segmentation & personalization",
+      "A/B testing & performance analytics",
+      "Template design & copywriting",
+    ],
   },
   {
     title: "Website Development",
     slug: "website-development",
     description: "High-conversion, lightning-fast digital experiences built with modern stacks for superior performance.",
-    icon: Globe
+    icon: Globe,
+    features: [
+      "Automated email campaign workflows",
+      "List segmentation & personalization",
+      "A/B testing & performance analytics",
+      "Template design & copywriting",
+    ],
   },
   {
     title: "Social Media Marketing",
     slug: "social-media-marketing",
     description: "Turning social interactions into high-intent revenue streams through targeted performance creative.",
-    icon: Zap
+    icon: Zap ,
+    features: [
+      "Platform-specific ad creatives", 
+      "Audience targeting & retargeting",
+      "Engagement & conversion tracking",
+      "Influencer partnership strategies",
+    ],
   },
   {
     title: "Content Marketing",
     slug: "content-marketing",
     description: "Data-driven storytelling that builds topical authority and nurtures leads through the entire funnel.",
-    icon: Layers
+    icon: Layers,
+    features: [
+      "SEO-optimized blog posts",
+      "Ebooks & whitepapers", 
+      "Video scripts & production",
+      "Infographics & visual content",
+    ],
+    img: "/content-marketing-service.jpeg",
   },
   {
     title: "Software Development",  
     slug: "software-development",
     description: "Custom enterprise-grade software solutions, automation tools, and proprietary growth stacks.",
-    icon: Code2
+    icon: Code2,
+    features: [
+      "Custom enterprise-grade software solutions",
+      "Automation tools & workflows",
+      "Proprietary growth stacks",
+      "API integrations & data pipelines",
+    ],
+    img: "/software-development-service.jpeg",
   },
   {
     title: "Email Marketing",
     slug: "email-marketing",
     description: "Hyper-personalized lifecycle automation that maximizes customer LTV and retention rates.",
-    icon: Mail
+    icon: Mail,
+    features: [
+      "Automated email campaign workflows",
+      "List segmentation & personalization",    
+      "A/B testing & performance analytics",
+      "Template design & copywriting",
+    ],
+    img: "/email-marketing-service.jpeg",
   },
   {
     title: "E-commerce Marketing",
     slug: "ecommerce-marketing",
     description: "Scalable performance marketing for stores, focused on ROAS, CAC optimization, and repeat purchase rate.",
-    icon: ShoppingCart
+    icon: ShoppingCart,
+    features: [
+      "Platform-specific ad creatives", 
+      "Audience targeting & retargeting", 
+      "Engagement & conversion tracking",
+      "Influencer partnership strategies",
+    ],
+    img: "/ecommerce-marketing-service.jpeg",
+
   }
 ];
+export const CONTACT_CARD = {
+  title: "Talk to Our Specialists",
+  subtitle: "Need Expert Guidance?",
+  buttonText: "Contact Us Now",
+};
 
 export const FEATURES = [
   {
