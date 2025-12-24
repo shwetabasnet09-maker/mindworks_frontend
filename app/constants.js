@@ -44,41 +44,50 @@ export const WHO_WE_ARE = {
 export const SERVICES = [
   {
     title: "Digital Marketing",
+        slug: "digital-marketing",
+
     description: "360° omnichannel strategies focused on aggressive market share acquisition and brand dominance.",
     icon: Megaphone
   },
   {
     title: "SEO",
+    slug: "search-engine-optimization",
     description: "Deep-tech search engine optimization. We don't just rank; we dominate intent-based search landscapes.",
     icon: Search
   },
   {
     title: "Website Development",
+    slug: "website-development",
     description: "High-conversion, lightning-fast digital experiences built with modern stacks for superior performance.",
     icon: Globe
   },
   {
     title: "Social Media Marketing",
+    slug: "social-media-marketing",
     description: "Turning social interactions into high-intent revenue streams through targeted performance creative.",
     icon: Zap
   },
   {
     title: "Content Marketing",
+    slug: "content-marketing",
     description: "Data-driven storytelling that builds topical authority and nurtures leads through the entire funnel.",
     icon: Layers
   },
   {
-    title: "Software Development",
+    title: "Software Development",  
+    slug: "software-development",
     description: "Custom enterprise-grade software solutions, automation tools, and proprietary growth stacks.",
     icon: Code2
   },
   {
     title: "Email Marketing",
+    slug: "email-marketing",
     description: "Hyper-personalized lifecycle automation that maximizes customer LTV and retention rates.",
     icon: Mail
   },
   {
     title: "E-commerce Marketing",
+    slug: "ecommerce-marketing",
     description: "Scalable performance marketing for stores, focused on ROAS, CAC optimization, and repeat purchase rate.",
     icon: ShoppingCart
   }
