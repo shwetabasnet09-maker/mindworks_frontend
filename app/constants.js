@@ -191,7 +191,8 @@ export const TESTIMONIALS = [
     position: "Head of Marketing",
     company: "EzyDog",
     imageUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-    tags: ["We", "couldn't", "imagine", "building", "without", "MindWorks"]
+    tags: ["We", "couldn't", "imagine", "building", "without", "MindWorks"],
+    videoId: "V0gn21FZz4E"
   },
   {
     text: "The technical depth of their team delivered serious SEO growth for our platform.",
@@ -199,7 +200,8 @@ export const TESTIMONIALS = [
     position: "Founder",
     company: "Stellar Digital",
     imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
-    tags: ["MindWorks", "delivered", "serious", "SEO", "growth"]
+    tags: ["MindWorks", "delivered", "serious", "SEO", "growth"],
+    videoId: "Y-QyXfBUltI"
   },
   {
     text: "Best decision we made for our e-commerce expansion in the MENA region.",
@@ -207,7 +209,8 @@ export const TESTIMONIALS = [
     position: "Creative Director",
     company: "Innovate Solutions",
     imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
-    tags: ["Best", "decision", "for", "MENA", "expansion"]
+    tags: ["Best", "decision", "for", "MENA", "expansion"],
+    videoId: "Y-QyXfBUltI"
   },
   {
     text: "Their software development team built us a tool that saved us thousands in manual labor.",
@@ -215,7 +218,9 @@ export const TESTIMONIALS = [
     position: "Operations Manager",
     company: "Emirates Group Sub",
     imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop",
-    tags: ["Saved", "thousands", "with", "MindWorks", "software"]
+    tags: ["Saved", "thousands", "with", "MindWorks", "software"],
+    videoId:"Y-QyXfBUltI"
+
   }
 ];
 

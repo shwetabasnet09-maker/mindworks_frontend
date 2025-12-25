@@ -109,7 +109,7 @@ const Services = () => {
                 <div className="glass p-8 rounded-[40px] h-full flex flex-col hover:bg-white/[0.04] transition-all duration-500 border border-white/10 hover:border-[#00A74E]/30">
 
                   <div className="w-16 h-16 bg-[#00A74E]/10 text-[#00A74E] rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-all duration-500">
-                    <service.icon size={28} />
+                    <service.icon size={48} />
                   </div>
 
                   <h3 className="text-xl font-black text-white mb-4 group-hover:text-[#00A74E] transition-colors">
