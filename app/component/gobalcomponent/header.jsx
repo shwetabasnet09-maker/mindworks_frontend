@@ -215,7 +215,7 @@ const Header = () => {
           </button>
 
           <div className="hidden lg:flex">
-            <Link href="/contact" className="bg-[#66B257] text-white px-8 py-2 rounded-[25px]">
+            <Link href="/contact" className="bg-[#00A74E] text-white px-8 py-2 rounded-[25px]">
               Call Anytime
             </Link>
           </div>
@@ -237,7 +237,7 @@ const Header = () => {
 
           <div className="flex items-center gap-4">
             <div className="hidden lg:flex">
-              <Link href="/contact" className="bg-[#66B257] text-white px-8 py-2 rounded-[25px]">
+              <Link href="/contact" className="bg-[#00A74E] text-white px-8 py-2 rounded-[25px]">
                 Call Anytime
               </Link>
             </div>
@@ -294,7 +294,7 @@ const Header = () => {
               <Link
                 key={index}
                 href={item.href}
-                className="text-white text-2xl font-bold hover:text-[#66B257]"
+                className="text-white text-2xl font-bold hover:text-[#00A74E]"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
