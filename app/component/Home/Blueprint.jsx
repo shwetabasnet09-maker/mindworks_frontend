@@ -33,7 +33,7 @@ const Process = () => {
 
                 <div className={`w-full md:w-1/2 pl-20 md:pl-0 ${index % 2 === 0 ? 'md:pr-24 text-left md:text-right' : 'md:pl-24 text-left'}`}>
                   <div className="dmsans bg-gray-800/30  rounded-3xl hover:border-green-500/20 border border-transparent transition-all shadow-sm relative">
-                    <span className="text-6xl font-extrabold text-white/10 absolute top-4 right-8 select-none pointer-events-none">{step.number}</span>
+                    
                     <h3 className="text-2xl md:text-3xl font-extrabold text-white ">{step.title}</h3>
                     <p className="text-gray-400 text-lg leading-relaxed font-medium">{step.description}</p>
                   </div>

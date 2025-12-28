@@ -54,7 +54,8 @@ export const SERVICES = [
       "Inventory & order management systems",
       "Conversion rate optimization",
     ],
-    img:"/about.png"
+    img:"/about.png",
+    link: "/services/digital-marketing",
   },
   {
     title: "SEO",
@@ -67,6 +68,7 @@ export const SERVICES = [
       "A/B testing & performance analytics",
       "Template design & copywriting",
     ],
+    link: "/services/search-engine-optimization",
   },
   {
     title: "Website Development",
@@ -79,6 +81,7 @@ export const SERVICES = [
       "A/B testing & performance analytics",
       "Template design & copywriting",
     ],
+    link: "/services/website-development",
   },
   {
     title: "Social Media Marketing",
@@ -91,6 +94,7 @@ export const SERVICES = [
       "Engagement & conversion tracking",
       "Influencer partnership strategies",
     ],
+    link: "/services/social-media-marketing",
   },
   {
     title: "Content Marketing",
@@ -104,6 +108,7 @@ export const SERVICES = [
       "Infographics & visual content",
     ],
     img: "/content-marketing-service.jpeg",
+    link: "/services/content-marketing",
   },
   {
     title: "Software Development",  
@@ -117,6 +122,7 @@ export const SERVICES = [
       "API integrations & data pipelines",
     ],
     img: "/software-development-service.jpeg",
+    link: "/services/software-development",
   },
   {
     title: "Email Marketing",
@@ -130,6 +136,7 @@ export const SERVICES = [
       "Template design & copywriting",
     ],
     img: "/email-marketing-service.jpeg",
+    link: "/services/email-marketing",
   },
   {
     title: "E-commerce Marketing",
@@ -143,6 +150,7 @@ export const SERVICES = [
       "Influencer partnership strategies",
     ],
     img: "/ecommerce-marketing-service.jpeg",
+    link: "/services/ecommerce-marketing",
 
   }
 ];
@@ -191,7 +199,7 @@ export const TESTIMONIALS = [
     position: "Head of Marketing",
     company: "EzyDog",
     imageUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-    tags: ["We", "couldn't", "imagine", "building", "without", "MindWorks"],
+   
     videoId: "V0gn21FZz4E"
   },
   {
@@ -200,7 +208,7 @@ export const TESTIMONIALS = [
     position: "Founder",
     company: "Stellar Digital",
     imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
-    tags: ["MindWorks", "delivered", "serious", "SEO", "growth"],
+   
     videoId: "Y-QyXfBUltI"
   },
   {
@@ -209,7 +217,7 @@ export const TESTIMONIALS = [
     position: "Creative Director",
     company: "Innovate Solutions",
     imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
-    tags: ["Best", "decision", "for", "MENA", "expansion"],
+   
     videoId: "Y-QyXfBUltI"
   },
   {
@@ -218,7 +226,7 @@ export const TESTIMONIALS = [
     position: "Operations Manager",
     company: "Emirates Group Sub",
     imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop",
-    tags: ["Saved", "thousands", "with", "MindWorks", "software"],
+   
     videoId:"Y-QyXfBUltI"
 
   }
