@@ -9,7 +9,7 @@ import ClientsShowcase from '../component/Home/Testimonials'
 import FAQ from '../component/Home/Blog'
 import Partners from '../component/Home/Partner'
 
-import ContactSection from '../component/Home/whychoose'
+import ContactSection from '../component/gobalcomponent/contact_form'
 import BlogSection from '../component/Home/Blog'
 import Banner from '../component/Home/banner'
 

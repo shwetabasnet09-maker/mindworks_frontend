@@ -31,7 +31,7 @@ const Services = () => {
             </h2>
           </div>
 
-          <p className="text-slate-400 text-lg max-w-sm">
+          <p className="text-white text-lg max-w-sm">
             Scalable digital strategies engineered for premium brands.
           </p>
         </div>
@@ -55,9 +55,9 @@ const Services = () => {
                   >
 
                     {/* Icon */}
-                    <div className="w-12 h-12 rounded-full bg-black/20 flex items-center justify-center mb-6">
+                    <div className="w-16 h-16  flex items-center justify-center mb-6">
                       <service.icon
-                        size={22}
+                        size={100}
                         className={
                           style.includes("text-black")
                             ? "text-black"
@@ -67,20 +67,26 @@ const Services = () => {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-lg font-bold mb-3 leading-snug">
+                    <h3 className="md:text-[25px] text-[20px]  font-bold mb-3 leading-snug outfit ">
                       {service.title}
                     </h3>
 
                     {/* Description */}
                     <p
-                      className={`text-sm leading-relaxed ${
-                        style.includes("text-black")
-                          ? "text-black/70"
-                          : "text-white/70"
-                      }`}
+                      className={`text-sm leading-relaxed dmsans ${style.includes("text-black")
+                        ? "text-black/70"
+                        : "text-white"
+                        }`}
                     >
                       {service.description}
+                      <ul className="list-disc pl-5 space-y-2">
+                        {Array.isArray(service.features) &&
+                          service.features.map((feature, index) => (
+                            <li key={index}>{feature}</li>
+                          ))}
+                      </ul>
                     </p>
+
 
                   </div>
                 </Link>

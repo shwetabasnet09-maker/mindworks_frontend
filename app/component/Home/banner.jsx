@@ -44,7 +44,7 @@
 //                 </span>
 //                 <span className="text-3xl font-black text-[#00A74E]">{result?.suffix}</span>
 //               </div>
-//               <p className="text-slate-500 font-black uppercase tracking-[0.3em] text-[10px]">{result?.label}</p>
+//               <p className="text-white font-black uppercase tracking-[0.3em] text-[10px]">{result?.label}</p>
 //               <div className="h-0.5 w-12 bg-[#00A74E]/20 group-hover:w-20 group-hover:bg-[#00A74E] mt-6 transition-all duration-700"></div>
 //             </motion.div>
 //           ))}
@@ -120,7 +120,7 @@ const Banner = () => {
                 )}
               </div>
 
-              <p className="text-slate-500 font-black uppercase tracking-[0.3em] text-[10px]">
+              <p className="text-white font-black uppercase tracking-[0.3em] text-[10px]">
                 {stat.label}
               </p>
 

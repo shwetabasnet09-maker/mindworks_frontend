@@ -45,7 +45,7 @@ const About = () => {
             <h3 className="text-3xl md:text-4xl font-heading font-black text-white mb-8 leading-tight tracking-tighter outfit">
               {WHO_WE_ARE.title}
             </h3>
-            <div className="space-y-6 text-slate-400 leading-relaxed text-lg font-medium dmsans">
+            <div className="space-y-6 text-white leading-relaxed text-lg font-medium dmsans">
               {WHO_WE_ARE.content.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
@@ -54,15 +54,15 @@ const About = () => {
             <div className="mt-12 pt-10 border-t border-white/5 grid grid-cols-3 gap-8 dmsans">
               <div>
                 <h4 className="text-3xl font-black text-white">500+</h4>
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">Growth Projects</p>
+                <p className="text-xs font-bold text-white uppercase tracking-widest mt-1">Growth Projects</p>
               </div>
               <div>
                 <h4 className="text-3xl font-black text-white">50+</h4>
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">Senior Experts</p>
+                <p className="text-xs font-bold text-white uppercase tracking-widest mt-1">Senior Experts</p>
               </div>
               <div>
                 <h4 className="text-3xl font-black text-white">10y+</h4>
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">MENA Mastery</p>
+                <p className="text-xs font-bold text-white uppercase tracking-widest mt-1">MENA Mastery</p>
               </div>
             </div>
           </motion.div>

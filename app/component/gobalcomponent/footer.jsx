@@ -56,7 +56,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-6">
               <Image src="/logo_mindworks.webp" alt="MindWorks Logo" width={120} height={40} className="object-contain" />
             </div>
-            <p className="text-gray-400 mb-8">
+            <p className="text-white mb-8">
               At vero eos et accusamus iusto odio dignissimos ducimus blanditiis
             </p>
             <div className="flex gap-2">
@@ -75,10 +75,10 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-6">Quick Link</h3>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Pricing Plan</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Best Program</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Press Kit</a></li>
+              <li><a href="#" className="text-white hover:text-white transition-colors">Features</a></li>
+              <li><a href="#" className="text-white hover:text-white transition-colors">Pricing Plan</a></li>
+              <li><a href="#" className="text-white hover:text-white transition-colors">Best Program</a></li>
+              <li><a href="#" className="text-white hover:text-white transition-colors">Press Kit</a></li>
             </ul>
           </div>
 
@@ -86,10 +86,10 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-6">Company</h3>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Team Member</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Reviews</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Latest News</a></li>
+              <li><a href="#" className="text-white hover:text-white transition-colors">About</a></li>
+              <li><a href="#" className="text-white hover:text-white transition-colors">Team Member</a></li>
+              <li><a href="#" className="text-white hover:text-white transition-colors">Reviews</a></li>
+              <li><a href="#" className="text-white hover:text-white transition-colors">Latest News</a></li>
             </ul>
           </div>
 
@@ -99,17 +99,17 @@ export default function Footer() {
             <ul className="space-y-6">
               <li className="flex items-start gap-3">
                 <MapPin className="w-6 h-6 text-[#00A74E] flex-shrink-0 mt-1" />
-                <span className="text-gray-400">55 Main Street, 2nd block<br />Melbourne, Australia</span>
+                <span className="text-white">55 Main Street, 2nd block<br />Melbourne, Australia</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-6 h-6 text-[#00A74E] flex-shrink-0" />
-                <a href="mailto:Support@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:Support@gmail.com" className="text-white hover:text-white transition-colors">
                   Support@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-6 h-6 text-[#00A74E] flex-shrink-0" />
-                <a href="tel:+00012344555" className="text-gray-400 hover:text-white transition-colors">
+                <a href="tel:+00012344555" className="text-white hover:text-white transition-colors">
                   +000 (123) 44 55
                 </a>
               </li>

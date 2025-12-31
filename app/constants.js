@@ -46,7 +46,7 @@ export const SERVICES = [
     title: "Digital Marketing",
         slug: "digital-marketing",
 
-    description: "360° omnichannel strategies focused on aggressive market share acquisition and brand dominance. The difference is in the details. The digital marketing services we provide are rooted in data science and technical excellence. We don't do 'spray and pray' ad campaigns; we engineer growth engines that scale predictably.  ",
+    description: "360° omnichannel strategies focused on aggressive market share acquisition and brand dominance. The difference is in the details.  ",
     icon: Megaphone,
     features: [
       "Custom storefront design & development",
@@ -233,14 +233,12 @@ export const TESTIMONIALS = [
 ];
 
 export const PARTNER_LOGOS = [
-  "https://cdn.worldvectorlogo.com/logos/klaviyo.svg",
-  "https://cdn.worldvectorlogo.com/logos/clutch-co-logo.svg",
-  "https://cdn.worldvectorlogo.com/logos/shopify.svg",
-  "https://cdn.worldvectorlogo.com/logos/bigcommerce-1.svg",
-  "https://cdn.worldvectorlogo.com/logos/magento-2.svg",
-  "https://cdn.worldvectorlogo.com/logos/mailchimp.svg",
-  "https://cdn.worldvectorlogo.com/logos/hubspot.svg",
-  "https://cdn.worldvectorlogo.com/logos/salesforce-2.svg"
+  "/image.png",
+  "/image3.png",
+  "/image2.png",
+  "/image4.png",
+  "/image2.png",
+  
 ];
 
 export const PROCESS = [

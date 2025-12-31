@@ -55,7 +55,7 @@ export default function MeetOurTeam() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-white mb-4 outfit">Meet our team</h1>
-          <p className="text-gray-400 text-lg">
+          <p className="text-white text-lg">
             Alone we can do so little, together we can<br />do so much.
           </p>
         </div>

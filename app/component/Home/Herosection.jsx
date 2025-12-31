@@ -67,7 +67,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-base md:text-lg text-slate-400 mb-12 max-w-3xl mx-auto font-medium leading-relaxed dmsans"
+            className="text-base md:text-lg text-white mb-12 max-w-3xl mx-auto font-medium leading-relaxed dmsans"
           >
             {result?.description || HERO_CONTENT.description}
           </motion.p>
@@ -95,7 +95,7 @@ const Hero = () => {
                 <p className="text-white font-semibold text-sm">Join 500+ Local Brands</p>
                 <div className="flex items-center space-x-1">
                   {[1,2,3,4,5].map(s => <div key={s} className="w-3 h-3 bg-[#00A74E] rounded-full"></div>)}
-                  <span className="text-slate-500 text-[10px] font-black uppercase ml-2 dmsans">5.0 Agency Rating</span>
+                  <span className="text-white text-[10px] font-black uppercase ml-2 dmsans">5.0 Agency Rating</span>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ const Hero = () => {
               {TRUST_BADGES.map((badge, idx) => (
                 <div key={idx} className="flex items-center justify-center space-x-3 group cursor-default">
                   <badge.icon className="w-6 h-6 text-[#00A74E] group-hover:scale-110 transition-transform" />
-                  <span className="dmsans text-sm md:text-sm font-black uppercase tracking-widest text-slate-500 group-hover:text-white transition-colors">
+                  <span className="dmsans text-sm md:text-sm font-black uppercase tracking-widest text-white group-hover:text-white transition-colors">
                     {badge.name}
                   </span>
                 </div>

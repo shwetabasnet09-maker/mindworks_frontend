@@ -12,7 +12,7 @@
 //         <div className="text-center max-w-3xl mx-auto mb-24">
 //           <span className="text-[#00A74E] font-black uppercase tracking-widest text-xs mb-4 block">Our Methodology</span>
 //           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight outfit">Our Blueprint for <span className="text-[#00A74E]">Success</span></h2>
-//           <p className="text-gray-400 text-lg font-medium dmsans">A standardized engineering methodology that produces non-standard results.</p>
+//           <p className="text-white text-lg font-medium dmsans">A standardized engineering methodology that produces non-standard results.</p>
 //         </div>
 
 //         <div className="relative">
@@ -35,7 +35,7 @@
 //                   <div className="dmsans bg-gray-800/30  rounded-3xl hover:border-green-500/20 border border-transparent transition-all shadow-sm relative">
                     
 //                     <h3 className="text-2xl md:text-3xl font-extrabold text-white ">{step.title}</h3>
-//                     <p className="text-gray-400 text-lg leading-relaxed font-medium">{step.description}</p>
+//                     <p className="text-white text-lg leading-relaxed font-medium">{step.description}</p>
 //                   </div>
 //                 </div>
 //               </motion.div>
@@ -101,7 +101,7 @@ export default function Process() {
                 <div className="flex-1">
                   
                   <h3 className="text-2xl font-light mb-3">Audit</h3>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-white leading-relaxed">
                     Deep dive into your data silos and competitor gaps.
                   </p>
                 </div>
@@ -117,7 +117,7 @@ export default function Process() {
                 <div className="flex-1">
                  
                   <h3 className="text-2xl font-light mb-3">Strategy</h3>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-white leading-relaxed">
                     Architecting your unique 90-day growth blueprint.
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function Process() {
                 <div className="flex-1">
                   
                   <h3 className="text-2xl font-light mb-3">Execute</h3>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-white leading-relaxed">
                    Agile implementation with weekly performance sprints.
                   </p>
                 </div>
@@ -149,7 +149,7 @@ export default function Process() {
                 <div className="flex-1">
                  
                   <h3 className="text-2xl font-light mb-3">Scale</h3>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-white leading-relaxed">
                     Aggressive reinvestment in winning channels.
                   </p>
                 </div>

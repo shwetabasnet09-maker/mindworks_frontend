@@ -27,7 +27,7 @@ const Testimonials = () => {
               The Clients Who Trusted <br />{" "}
               <span className="text-[#00A74E]">Our Process</span>
             </h2>
-            <p className="text-xl text-slate-400 font-medium leading-relaxed dmsans">
+            <p className="text-xl text-white font-medium leading-relaxed dmsans">
               Real partnerships are built on results, not promises. Here’s what our clients say after trusting MindWorks to deliver serious growth.
             </p>
           </motion.div>
@@ -75,7 +75,7 @@ const Testimonials = () => {
               <div className="absolute bottom-10 left-10 right-10 pointer-events-none">
                 <div className="mb-4">
                   <h3 className="text-3xl font-heading font-black text-white">{t.author}</h3>
-                  <p className="text-slate-400 text-sm font-bold mt-1 uppercase tracking-widest">
+                  <p className="text-white text-sm font-bold mt-1 uppercase tracking-widest">
                     {t.position}, {t.company}
                   </p>
                 </div>
