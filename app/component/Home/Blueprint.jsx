@@ -1,83 +1,156 @@
+
+
 // "use client";
-// import React from 'react';
-// import { PROCESS } from '../../constants';
-// import { motion } from 'framer-motion';
 
-// const Process = () => {
-//   return (
-//     <section id="process" className="py-32 bg-gray-900 relative overflow-hidden">
-//       <div className="absolute inset-0 bg-gray-800/20"></div>
-      
-//       <div className="container mx-auto px-6 relative z-10">
-//         <div className="text-center max-w-3xl mx-auto mb-24">
-//           <span className="text-[#00A74E] font-black uppercase tracking-widest text-xs mb-4 block">Our Methodology</span>
-//           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight outfit">Our Blueprint for <span className="text-[#00A74E]">Success</span></h2>
-//           <p className="text-white text-lg font-medium dmsans">A standardized engineering methodology that produces non-standard results.</p>
-//         </div>
+// import React, { useState, useEffect } from "react";
+// import { ArrowUpRight, Target, Globe, Layers, Database } from "lucide-react";
 
-//         <div className="relative">
-//           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-white/5 via-white/20 to-white/5 md:-translate-x-1/2"></div>
-
-//           <div className="space-y-12 md:space-y-20">
-//             {PROCESS.map((step, index) => (
-//               <motion.div 
-//                 key={index}
-//                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-//                 whileInView={{ opacity: 1, x: 0 }}
-//                 viewport={{ once: true }}
-//                 className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
-//               >
-//                 <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-gray-900 border-2 border-white/10 flex items-center justify-center z-20 shadow-xl">
-//                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-//                 </div>
-
-//                 <div className={`w-full md:w-1/2 pl-20 md:pl-0 ${index % 2 === 0 ? 'md:pr-24 text-left md:text-right' : 'md:pl-24 text-left'}`}>
-//                   <div className="dmsans bg-gray-800/30  rounded-3xl hover:border-green-500/20 border border-transparent transition-all shadow-sm relative">
-                    
-//                     <h3 className="text-2xl md:text-3xl font-extrabold text-white ">{step.title}</h3>
-//                     <p className="text-white text-lg leading-relaxed font-medium">{step.description}</p>
-//                   </div>
-//                 </div>
-//               </motion.div>
-//             ))}
-//           </div>
-//         </div>
-
-       
-//       </div>
-//     </section>
-//   );
+// /* ---------------- ICON MAPPER ---------------- */
+// const iconMap = {
+//   Audit: Target,
+//   Strategy: Globe,
+//   Execute: Layers,
+//   Scale: Database,
 // };
 
-// export default Process;
+// export default function Process() {
+//   const [data, setData] = useState(null);
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     async function fetchData() {
+//       try {
+//         const res = await fetch(
+//           "http://127.0.0.1:8000/api/home/blueprint/",
+//           { cache: "no-store" }
+//         );
+//         const json = await res.json();
+//         console.log("API DATA:", json);
+//         setData(json[0]); // 👈 API returns an array
+//       } catch (err) {
+//         console.error("Error fetching data:", err);
+//       } finally {
+//         setLoading(false);
+//       }
+//     }
+//     fetchData();
+//   }, []);
+
+//   if (loading) {
+//     return <div className="text-white text-center py-24">Loading...</div>;
+//   }
+
+//   if (!data) return null;
+
+//   return (
+//     <div className="min-h-screen bg-gray-900 text-white">
+//       <div className="py-20 wrapper mx-auto px-6">
+//         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+
+//           {/* LEFT SIDE */}
+//           <div className="lg:sticky lg:top-32 lg:h-fit py-12 lg:py-20 space-y-8">
+//             <div className="text-2xl uppercase text-[#00A74E] dmsans">
+//               {data.title}
+//             </div>
+
+//             <h2 className="text-4xl lg:text-5xl font-light leading-tight outfit">
+//               {data.subtitle}
+//             </h2>
+
+//             <p className="dmsans text-[20px]">
+//               {data.description}
+//             </p>
+
+//             <div className="pt-6">
+//               <button className="group flex items-center gap-3 px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-full transition-all duration-300 dmsans">
+//                 <span className="text-lg">More About</span>
+//                 <div className="w-10 h-10 flex items-center justify-center bg-[#00A74E] rounded-full group-hover:rotate-45 transition-transform duration-300">
+//                   <ArrowUpRight className="w-5 h-5 text-black" />
+//                 </div>
+//               </button>
+//             </div>
+//           </div>
+
+//           {/* RIGHT SIDE — LOOPED */}
+//           <div className="py-12 lg:py-20 space-y-12">
+//             {data.process.map((item, index) => {
+//               const Icon = iconMap[item.title] || Target;
+
+//               return (
+//                 <div
+//                   key={item.id}
+//                   className={`space-y-4 pb-8 ${
+//                     index !== data.process.length - 1
+//                       ? "border-b border-gray-800"
+//                       : ""
+//                   }`}
+//                 >
+//                   <div className="flex items-start gap-4">
+//                     <div className="w-12 h-12 flex items-center justify-center border-2 border-lime-400 rounded-lg flex-shrink-0">
+//                       <Icon className="w-6 h-6 text-lime-400" />
+//                     </div>
+
+//                     <div className="flex-1">
+//                       <h3 className="text-2xl font-light mb-3">
+//                         {item.number}. {item.title}
+//                       </h3>
+//                       <p className="text-white leading-relaxed">
+//                         {item.description}
+//                       </p>
+//                     </div>
+//                   </div>
+//                 </div>
+//               );
+//             })}
+//           </div>
+
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 "use client";
 
 import React from "react";
 import { ArrowUpRight, Target, Globe, Layers, Database } from "lucide-react";
 
-export default function Process() {
+/* ---------------- ICON MAPPER ---------------- */
+const iconMap = {
+  Audit: Target,
+  Strategy: Globe,
+  Execute: Layers,
+  Scale: Database,
+};
+
+export default function Process({ data }) {
+  // If no data exists for this region, hide the section
+  if (!data) return null;
+
+  // If your API returns an array, take the first item. 
+  // If you already pass homepageData.blueprint[0] from page.js, remove the [0] here.
+  const content = Array.isArray(data) ? data[0] : data;
+
+  if (!content) return null;
+
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {/* Header */}
-      
-
-      {/* Main Content */}
-      <div className="py-20 wrapper  mx-auto px-6">
+      <div className="py-20 wrapper mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
 
-          {/* LEFT SIDE — NOW STICKY */}
+          {/* LEFT SIDE — STICKY */}
           <div className="lg:sticky lg:top-32 lg:h-fit py-12 lg:py-20 space-y-8">
-            <div className="flex items-center gap-2 text-lime-400">
-              <div className="text-2xl UPPERCASE text-[#00A74E] dmsans">OUR METHODOLOGY</div>
-              
+            <div className="text-2xl uppercase text-[#00A74E] dmsans">
+              {content.title}
             </div>
 
-            <h2 className="text-4xl lg:text-5xl  font-light leading-tight outfit">
-              Our Blueprint for {''}
-              <span className=" font-normal text-[#00A74E]">Success</span>
-              
+            <h2 className="text-4xl lg:text-5xl font-light leading-tight outfit">
+              {content.subtitle}
             </h2>
+
+            <p className="dmsans text-[20px] text-white/70">
+              {content.description}
+            </p>
 
             <div className="pt-6">
               <button className="group flex items-center gap-3 px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-full transition-all duration-300 dmsans">
@@ -89,74 +162,40 @@ export default function Process() {
             </div>
           </div>
 
-          {/* RIGHT SIDE — NOW SCROLLABLE */}
+          {/* RIGHT SIDE — SCROLLABLE PROCESS */}
           <div className="py-12 lg:py-20 space-y-12">
+            {content.process?.map((item, index) => {
+              // Get icon from title (e.g., "Audit" -> Target icon)
+              const Icon = iconMap[item.title] || Target;
 
-            {/* Feature 1 */}
-            <div className="space-y-4 pb-8 border-b border-gray-800">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 flex items-center justify-center border-2 border-lime-400 rounded-lg flex-shrink-0">
-                  <Target className="w-6 h-6 text-lime-400" />
-                </div>
-                <div className="flex-1">
-                  
-                  <h3 className="text-2xl font-light mb-3">Audit</h3>
-                  <p className="text-white leading-relaxed">
-                    Deep dive into your data silos and competitor gaps.
-                  </p>
-                </div>
-              </div>
-            </div>
+              return (
+                <div
+                  key={item.id || index}
+                  className={`space-y-4 pb-8 ${
+                    index !== content.process.length - 1
+                      ? "border-b border-gray-800"
+                      : ""
+                  }`}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 flex items-center justify-center border-2 border-[#00A74E]/40 rounded-lg flex-shrink-0">
+                      <Icon className="w-6 h-6 text-[#00A74E]" />
+                    </div>
 
-            {/* Feature 2 */}
-            <div className="space-y-4 pb-8 border-b border-gray-800">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 flex items-center justify-center border-2 border-lime-400 rounded-lg flex-shrink-0">
-                  <Globe className="w-6 h-6 text-lime-400" />
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-light mb-3 outfit">
+                        {item.number ? `${item.number}. ` : ""}{item.title}
+                      </h3>
+                      <p className="text-white/60 leading-relaxed dmsans">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex-1">
-                 
-                  <h3 className="text-2xl font-light mb-3">Strategy</h3>
-                  <p className="text-white leading-relaxed">
-                    Architecting your unique 90-day growth blueprint.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="space-y-4 pb-8 border-b border-gray-800">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 flex items-center justify-center border-2 border-lime-400 rounded-lg flex-shrink-0">
-                  <Layers className="w-6 h-6 text-lime-400" />
-                </div>
-                <div className="flex-1">
-                  
-                  <h3 className="text-2xl font-light mb-3">Execute</h3>
-                  <p className="text-white leading-relaxed">
-                   Agile implementation with weekly performance sprints.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Feature 4 */}
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 flex items-center justify-center border-2 border-lime-400 rounded-lg flex-shrink-0">
-                  <Database className="w-6 h-6 text-lime-400" />
-                </div>
-                <div className="flex-1">
-                 
-                  <h3 className="text-2xl font-light mb-3">Scale</h3>
-                  <p className="text-white leading-relaxed">
-                    Aggressive reinvestment in winning channels.
-                  </p>
-                </div>
-              </div>
-            </div>
-
+              );
+            })}
           </div>
+
         </div>
       </div>
     </div>

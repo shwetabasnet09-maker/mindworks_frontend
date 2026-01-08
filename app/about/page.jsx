@@ -8,7 +8,7 @@ import Banner from '../component/Home/banner'
 const page = () => {
   return (
     <div>
-   <Bannermain backgroundImg="/banner_img.jpeg" title="About-Us" />
+   <Bannermain backgroundImg="/aboutus.png" title="About-Us" />
    <Whoweare/>
    <Banner/>
    <Partners/>

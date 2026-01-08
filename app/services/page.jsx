@@ -9,7 +9,7 @@ import ProjectSection from '../component/Service/Project'
 const page = () => {
   return (
     <div>
-    <Bannermain backgroundImg="/banner_img.jpeg" title="Services" />
+    <Bannermain backgroundImg="/Services.png" title="Services" />
       <Services/>
       <Features/>
      <ProjectSection/>

@@ -8,7 +8,7 @@ const page
  = () => {
   return (
     <div>
-        <Bannermain backgroundImg="/banner_img.jpeg" title="Projects" />
+        <Bannermain backgroundImg="/Projects.png" title="Projects" />
         <ProjectSection/>
         <Testimonials/>
 

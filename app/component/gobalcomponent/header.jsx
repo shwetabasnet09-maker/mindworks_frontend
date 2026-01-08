@@ -200,9 +200,9 @@ const Header = () => {
       {/* ---------- INITIAL HEADER ---------- */}
       <nav className="dmsans absolute top-[40px] left-1/2 -translate-x-1/2 z-40 w-[95%] md:w-[90%]">
         <div className="relative wrapper flex items-center justify-between py-3 px-4 md:px-6 rounded-full border border-white bg-transparent">
-          <div className="md:w-[10%] w-[30%]">
+          <div className="md:w-[10%] w-[30%] h-[38px]">
             <Link href="/">
-              <Image src="/logo-wide-white.png" alt="Logo" width={200} height={30} className="w-full" priority />
+             <Image src="/logo.webp" alt="Logo" width={150} height={30} className="w-auto h-8" />
             </Link>
           </div>
 

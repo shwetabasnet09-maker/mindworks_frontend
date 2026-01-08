@@ -1,37 +1,51 @@
 
 
 
-// "use client"; 
-// import React, { useState, useEffect } from 'react';
-// import { STATS } from '../../constants';
-// import { motion } from 'framer-motion';
+// "use client";
+
+// import React, { useState, useEffect } from "react";
+// import { motion } from "framer-motion";
 
 // const Banner = () => {
-//   const [result, setResult] = useState(null);
-//     const [loading, setLoading] = useState(false);
-  
-//     useEffect(() => {
-//        async function fetchData() {
+//   const [result, setResult] = useState([]);
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     async function fetchData() {
 //       try {
-//         const res = await fetch(`http://127.0.0.1:8000/api/home/bannerstats/
-// `);
+//         const res = await fetch(
+//           "http://127.0.0.1:8000/api/home/bannerstats/",
+//           { cache: "no-store" }
+//         );
+
 //         const json = await res.json();
-//         setData(json);
+//         console.log("API DATA:", json);
+
+//         setResult(json); // ✅ correct
 //       } catch (err) {
 //         console.error("Error fetching data:", err);
+//       } finally {
+//         setLoading(false);
 //       }
 //     }
+
 //     fetchData();
 //   }, []);
-//   console.log(`http://127.0.0.1:8000/api/home/bannerstats/`, result);
+
+//   if (loading) {
+//     return <div className="text-white text-center py-24">Loading...</div>;
+//   }
 
 //   return (
-//     <section id="stats" className="py-24 relative overflow-hidden bg-[#1F1F1F]">
+//     <section
+//       id="stats"
+//       className="py-24 relative overflow-hidden bg-[#1F1F1F]"
+//     >
 //       <div className="wrapper px-6">
 //         <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-//           {STATS.map((stat, index) => (
+//           {result.map((stat, index) => (
 //             <motion.div
-//               key={index}
+//               key={stat.id}
 //               initial={{ opacity: 0, y: 20 }}
 //               whileInView={{ opacity: 1, y: 0 }}
 //               viewport={{ once: true }}
@@ -40,11 +54,19 @@
 //             >
 //               <div className="mb-4">
 //                 <span className="text-3xl md:text-5xl outfit font-heading font-black text-white group-hover:text-[#00A74E] transition-colors tracking-tighter">
-//                   {result?.value }
+//                   {stat.value}
 //                 </span>
-//                 <span className="text-3xl font-black text-[#00A74E]">{result?.suffix}</span>
+//                 {stat.suffix && (
+//                   <span className="text-3xl font-black text-[#00A74E]">
+//                     {stat.suffix}
+//                   </span>
+//                 )}
 //               </div>
-//               <p className="text-white font-black uppercase tracking-[0.3em] text-[10px]">{result?.label}</p>
+
+//               <p className="text-white font-black uppercase tracking-[0.3em] text-[10px]">
+//                 {stat.label}
+//               </p>
+
 //               <div className="h-0.5 w-12 bg-[#00A74E]/20 group-hover:w-20 group-hover:bg-[#00A74E] mt-6 transition-all duration-700"></div>
 //             </motion.div>
 //           ))}
@@ -54,55 +76,29 @@
 //   );
 // };
 
-
 // export default Banner;
 
 
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
-const Banner = () => {
-  const [result, setResult] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const res = await fetch(
-          "http://127.0.0.1:8000/api/home/bannerstats/",
-          { cache: "no-store" }
-        );
-
-        const json = await res.json();
-        console.log("API DATA:", json);
-
-        setResult(json); // ✅ correct
-      } catch (err) {
-        console.error("Error fetching data:", err);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return <div className="text-white text-center py-24">Loading...</div>;
-  }
+// Accept 'data' and 'region' as props from the parent
+const Banner = ({ data, region }) => {
+  // If no data exists for this region, don't render the section
+  if (!data || data.length === 0) return null;
 
   return (
-    <section
-      id="stats"
-      className="py-24 relative overflow-hidden bg-[#1F1F1F]"
-    >
+    <section id="stats" className="py-24 relative overflow-hidden bg-[#1F1F1F]">
       <div className="wrapper px-6">
+        {/* Optional: Show region tag for debugging */}
+        {/* <p className="text-gray-500 text-[8px] mb-4">Region: {region}</p> */}
+        
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-          {result.map((stat, index) => (
+          {data.map((stat, index) => (
             <motion.div
-              key={stat.id}
+              key={stat.id || index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

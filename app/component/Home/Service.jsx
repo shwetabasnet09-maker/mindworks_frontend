@@ -4,15 +4,10 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import { SERVICES } from "../../constants";
-import { motion } from "framer-motion";
+import ServiceGrid from "../Service/ServiceGrid";
 
-const cardStyles = [
-  "bg-black text-white border border-white hover:border-white",
-  "bg-[#00A74E] text-white border border-white/15 hover:border-[#00A74E]/50",
-  "bg-[#E6E6E8] text-black border border-black hover:border-black",
-];
+
+
 
 const Services = () => {
   return (
@@ -32,69 +27,13 @@ const Services = () => {
           </div>
 
           <p className="text-white text-lg max-w-sm">
-            Scalable digital strategies engineered for premium brands.
+            Scalable digital strategies engineered for the region's most ambitious premium brands.
+
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {SERVICES.map((service, index) => {
-            const style = cardStyles[index % cardStyles.length];
-
-            return (
-              <motion.div
-                key={service.slug}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <Link href={`/services/${service.slug}`} className="block h-full">
-                  <div
-                    className={`${style} rounded-[28px] p-8 h-full flex flex-col transition-all duration-300 hover:-translate-y-2`}
-                  >
-
-                    {/* Icon */}
-                    <div className="w-16 h-16  flex items-center justify-center mb-6">
-                      <service.icon
-                        size={100}
-                        className={
-                          style.includes("text-black")
-                            ? "text-black"
-                            : "text-white"
-                        }
-                      />
-                    </div>
-
-                    {/* Title */}
-                    <h3 className="md:text-[25px] text-[20px]  font-bold mb-3 leading-snug outfit ">
-                      {service.title}
-                    </h3>
-
-                    {/* Description */}
-                    <p
-                      className={`text-sm leading-relaxed dmsans ${style.includes("text-black")
-                        ? "text-black/70"
-                        : "text-white"
-                        }`}
-                    >
-                      {service.description}
-                      <ul className="list-disc pl-5 space-y-2">
-                        {Array.isArray(service.features) &&
-                          service.features.map((feature, index) => (
-                            <li key={index}>{feature}</li>
-                          ))}
-                      </ul>
-                    </p>
-
-
-                  </div>
-                </Link>
-              </motion.div>
-            );
-          })}
-        </div>
-
+       <ServiceGrid/>
+       
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ export default function ContactPage() {
 
   return (
     <div className=" bg-black text-white">
-        <Bannermain backgroundImg="/banner_img.jpeg" title="Contact-Us" />
+        <Bannermain backgroundImg="/contact.png" title="Contact-Us" />
       <div className="wrapper mx-auto px-4 py-16">
 
       <ContactForm/>

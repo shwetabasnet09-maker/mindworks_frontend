@@ -16,7 +16,7 @@ const Bannermain = ({ title, subTitle, backgroundImg }) => {
       style={{ backgroundImage: `url(${backgroundImg})` }}
     >
       {/* Strong Dark Overlay */}
-      <div className="absolute inset-0 bg-black/85"></div>
+      <div className="absolute inset-0 "></div>
 
       {/* Content */}
       <div className="relative z-10 flex justify-center items-center h-full text-center px-4">
